@@ -23,6 +23,7 @@ export default function KeywordSelector({
   const onKeywordsChange = (e: ChangeEvent<HTMLTextAreaElement>) => {
     const sounds = e.target.value.split(",");
     onKeywordsChanged(sounds);
+    onSoundTypeChanged("words");
   };
 
   return (
