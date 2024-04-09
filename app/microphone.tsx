@@ -157,6 +157,8 @@ export default function Microphone({ keywords }: { keywords: string[] }) {
         {/* {caption && micOpen && caption} */}
         {nameMet && `You keyword: ${nameMet} was spoken around you :)`}
       </div>
+      Microphone: {!!microphone}
+      User Media: {!!userMedia}
     </div>
   );
 }
