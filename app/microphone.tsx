@@ -153,12 +153,10 @@ export default function Microphone({ keywords }: { keywords: string[] }) {
       <button className="w-24 h-24" onClick={() => toggleMicrophone()}>
         <Recording width="96" height="96" className={micStyles} />
       </button>
-      <div className="mt-20 p-6 text-xl text-center">
+      <div className="mt-10 p-6 text-xl text-center">
         {/* {caption && micOpen && caption} */}
         {nameMet && `You keyword: ${nameMet} was spoken around you :)`}
       </div>
-      Microphone: {!!microphone}
-      User Media: {!!userMedia}
     </div>
   );
 }
